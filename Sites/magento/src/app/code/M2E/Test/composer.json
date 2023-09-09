@@ -1,0 +1,14 @@
+{
+  "name": "m2e/test",
+  "description": "M2E Test",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "M2E\\Test\\": ""
+    }
+  }
+}

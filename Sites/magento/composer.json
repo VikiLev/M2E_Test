@@ -1,0 +1,7 @@
+{
+    "require": {
+        "mageplaza/module-banner-slider": "^4.0",
+        "avada/module-proofo": "^1.0",
+        "mageplaza/module-core": "^1.5"
+    }
+}

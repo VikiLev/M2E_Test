@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="M2E\Test\Api\Data\TestInterface"
+                type="M2E\Test\Model\Test" />
+    <preference for="M2E\Test\Api\TestRepositoryInterface"
+                type="M2E\Test\Model\TestRepository" />
+    <preference for="M2E\Test\Api\Data\TestSearchResultsInterface"
+                type="Magento\Framework\Api\SearchResults"/>
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="m2e_import" xsi:type="object">M2E\Test\Console\Command\ImportDataCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
